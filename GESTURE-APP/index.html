@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>GESTURES APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <center>
+                <div class="header">
+                    <h1>GESTURES APP</h1>
+                    <div class="emojis-wrapper">
+                        <div class="emoji">
+                            👌
+                            <p class="emoji-text">Amazing</p>
+                        </div>
+                        <div class="emoji">
+                            👍
+                            <p class="emoji-text">Best</p>
+                        </div>
+                        <div class="emoji">
+                            ✌️
+                            <p class="emoji-text">Victory</p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="content-wrapper">
+                    <div class="cam-frame">
+                        <label>Your webcam - </label>
+                        <div id="camera"></div>
+                        <br /><br />
+                        <button onclick="takeSnapshot()" class="primary-button ">Capture Image</button>
+                    </div>
+
+                    <div class="predictions">
+                      <div class="emoji">
+                          <p class="emoji-text" style="font-weight:bold;">Prediction 1 </p>
+                          <span id="e1">📄</span>
+                          <p class="emoji-text" id="1">Empty</p>
+                        </div>
+                        <div class="emoji">
+                          <p class="emoji-text" style="font-weight:bold;">Prediction 2 </p>
+                          <span id="e2">📄</span>
+                          <p class="emoji-text" id="2">Empty</p>
+                        </div>
+                    </div>
+                    <div class="cam-frame">
+                        <label>Snapshot - </label>
+                        <div id="snapshot"></div>
+                        <br /><br />
+                        <button onclick="check()" class="primary-button ">Predict Gesture</button>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto+Slab&display=swap");
+
+body {
+    font-family: "montserrat";
+}
+
+h1 {
+    font-family: "roboto slab";
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#camera,
+#snapshot {
+    width: 350px;
+    height: 300px;
+    box-shadow: 0 0 10px 0.1rem #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+#camera>video::after {
+    aspect-ratio: 350/300;
+}
+#result_emotion_name1,
+#result_emotion_name2 {
+    color: black;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    box-shadow: 0 0 3px 1px grey;
+    background-color: rgb(255, 252, 252);
+    padding: 10px 20px;
+
+    border-radius: 20px;
+}
+.emoji {
+    font-size: 5em;
+    box-shadow: 0 0 10px 0 #eee;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.emoji-text {
+    font-size: 1.5rem;
+    box-shadow: none;
+}
+.emojis-wrapper {
+    background-color: rgb(255, 252, 252);
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    box-shadow: 0 0em 3px 1px grey;
+    gap: 20px;
+    width: 35%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.predictions {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
+    align-items: center;
+}
+
+.predictions > div {
+    padding: 25px 10px;
+}
+
+button {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.75rem;
+}
+
+.primary-button {
+    margin-top: -25px;
+    color: white;
+    background-color: #0078d4;
+    border: 1px solid #0078d4;
+    border-radius: 100px;
+    padding: 6.25px 15px;
+    transition: all 0.5s cubic-bezier(0.1, 0.9, 0.2, 1);
+    outline: none;
+    width: 343.75px;
+}
+
+.primary-button:hover {
+    background-color: #005ba1;
+}
+
+.primary-button:active {
+    background-color: rgb(6, 72, 123);
+}
